@@ -84,7 +84,7 @@ header>nav{
      height: 100vh;
      background-position: center;
      position: relative;
-     border: 1px solid white;
+    
 
 }
 .hero-circle{
@@ -157,22 +157,70 @@ header>nav{
     align-items: center;
     flex-direction: column;
     position: absolute;
-    top: 80%;
+    top: 85%;
     left: 50%;
      transform: translate(-50%, -50%);
      gap: 1rem;
      max-width: 550px;
      background: transparent;
+     margin: 0 auto;
     
 }
-.hero-content >h1,p{
+.hero-content >h1 ,p{
     color: var(--white-font);
-    text-align: center;
     background: transparent;
+}
+.podcast-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    max-width: 650px;
+     max-width: 60%;
+    margin: 3rem auto;
+    
+}
+.podcast-container>h1{
+    color: var(--white-font);
 }
 
 
+.border{
+    border: 1px solid var(--#7c7777, rgb(241, 237, 237));
+    opacity: 0.1;
+    max-width: 1000px;
+    margin: 10px auto;
+}
+/*.................. rating container.................... */
+.rating{
+    /* margin: 100px auto; */
+    max-width: 1360px;
+    
+    margin: 6rem auto;
+}
+.rating-container{
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    align-self: center;
+    justify-content: center;
+    gap: 6rem;
+    padding-left: 6rem;
+      
 
+}
+
+.rating-content{
+    
+    display: flex;
+    flex-direction: column;
+     align-self: center;
+    justify-content: center;
+
+}
+.rating-content h1{
+    color: #00FF88;
+}
 
 
 /* ///////////////////////responsive breakpiont//////////////////// */
@@ -191,6 +239,13 @@ header>nav{
 .new{
     top: 25%;
     left: 75%;
+}
+.rating-container{
+    grid-template-columns: repeat(2, 1fr);
+    margin: 6% 12%;
+    gap: .5rem;
+    padding-left: 0;
+    
 }
 
 }
