@@ -28,6 +28,12 @@
     border-radius: 10000px;
     background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1)));
     cursor: pointer;
+    border: none;
+    
+    
+}
+.btn-primary:hover{
+    color: greenyellow;
 }
 
 
@@ -70,13 +76,99 @@ header>nav{
 
 /*.....................hero section.............................. */
 .hero-bg{
-    background-image: url('./images/hero-bg.png');
-    /* background-size: cover;
-    background-repeat: no-repeat; */
-    width: 500px;
-    height: 500px;
 
+     background-image: url('../images/hero-bg.png');
+     background-repeat: no-repeat;
+     background-size: cover;
+     width: 100%;
+     height: 100vh;
+     background-position: center;
+     position: relative;
+     border: 1px solid white;
 
+}
+.hero-circle{
+    background-color: transparent;
+    width: 20rem;
+    height: 20rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -75%);
+    
+    
+}
+.microphone{
+    background-color: transparent;
+    height: 10rem;
+    width: 7rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+}
+.new{
+   font-size: 1rem;
+    background-color: #00FF88;
+    padding: 8px 16px;
+    border-radius: 1000px;
+    box-shadow: 0px 3px 27px 0px rgba(0, 255, 136, 0.5);
+    background: var(--#00FF88, rgba(0, 255, 136, 1));
+    position: absolute;
+    top: 25%;
+    left: 60%;
+    
+    transform: translate(-50%, -50%);
+}
+.hero-btn{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    background: transparent;
+
+}
+.hero-btn button{
+    width: 160px;
+}
+.btn-primary img{
+    background: transparent;
+    background: transparent;
+}
+.btn-secondery{
+    background: transparent;
+    color: #00FF88;
+    box-sizing: border-box;
+    border: 1px solid var(--#00FF88, rgba(0, 255, 136, 1));
+    border-radius: 10000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 10px 14px;
+    border: 1px solid #00FF88;
+    
+}
+.btn-secondery:hover{
+    color: orange;
+}
+.hero-content{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+     transform: translate(-50%, -50%);
+     gap: 1rem;
+     max-width: 550px;
+     background: transparent;
+    
+}
+.hero-content >h1,p{
+    color: var(--white-font);
+    text-align: center;
+    background: transparent;
 }
 
 
@@ -94,6 +186,11 @@ header>nav{
 }
 .hamburger{
     display:inline;
+}
+/* \\\\\\\\hero section/////////////// */
+.new{
+    top: 25%;
+    left: 75%;
 }
 
 }
