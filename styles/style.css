@@ -37,6 +37,9 @@
     border-radius: 8px;
     box-shadow: 3px 5px 5px rgb(71, 231, 156);
 }
+
+
+
 p{
      color: rgb(155, 145, 145);
      background: transparent;
@@ -45,6 +48,7 @@ p{
 
 
 /* .............main.................. */
+/* .................navbar............... */
 header{
     margin: 2px auto;
 }
@@ -130,7 +134,17 @@ header>nav{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -100%);
+    animation: mymov 2s ease-in-out 3s infinite alternate;
+      
 }
+@keyframes mymov {
+    from{
+        left: 46%;
+    }
+   
+
+}
+
 .new{
    font-size: 1rem;
     background-color: #00FF88;
@@ -144,7 +158,17 @@ header>nav{
     color: white;
     transform: translate(-50%, -50%);
     filter: drop-shadow(1px 1px 10px rgb(71, 231, 156));
+
+    animation: bounce 2s ease-in-out 3s infinite alternate;
+
 }
+@keyframes bounce {
+    from{
+        top: 20%;
+    }
+
+}
+
 .hero-btn{
     display: flex;
     flex-direction: row;
@@ -260,7 +284,7 @@ header>nav{
 }
 .choose-tech-container>h1{
     color: var(--white-font);
-    text-align: center;s
+    text-align: center;
 }
 
 .choose-tech{
@@ -284,9 +308,10 @@ header>nav{
     
 }
 .grid-items:hover{
-
     background-color: #130a1f;
     box-shadow: 3px 5px 5px rgb(71, 231, 156);
+    transition: 1s ease-in-out 0.3s;
+    
 }
 
 .grid-items>h3{
@@ -327,7 +352,6 @@ header>nav{
 /* ..............................episodes container................................ */
 .episodes-container{
     max-width: 1100px;
-    /* question.???????????????????????????????.................................... */
     margin: 2rem auto 0rem;
     
     display: flex;
@@ -463,9 +487,6 @@ footer{
     display: flex;
     gap: .5rem;
 }
-/* .logo-footer{
-    background: transparent;
-} */
 
 
 
@@ -474,7 +495,8 @@ footer{
 
 
 
-/* //////////////////////////////////////////responsive breakpiont//////////////////////////////////////////////////////// */
+
+/* //////////////////////////////////////////( responsive breakpiont small device- 576px )////////////////////////////////////////////// */
 @media screen and (max-width:576px){
     header>nav{
     margin: 6% 10%;
@@ -513,11 +535,9 @@ footer{
 /* ...................rating container................. */
 
 .rating-container{
-    grid-template-columns: repeat(2, 1fr);
-    margin: 6% 8%;
+    grid-template-columns: repeat(2, 180px);
+    margin: 6% auto;
     gap: 1rem;
-    padding: 0rem 1rem 0rem 2.2rem;
-    /* border: 1px solid red; */
     
 }
 /* ........choose tech......... */
@@ -574,4 +594,55 @@ footer{
     gap:1.5rem;
 }
 
+}
+
+
+/* //////////////////////////////////////////( responsive breakpiont medium device-(576px to 992px )///////////////////////////////////// */
+@media screen and (min-width: 577px) and (max-width: 992px){
+    header>nav>h1{
+        font-size: 500;
+        font-family: inter;
+    }
+    .nav-menu{
+    /* display: flex; */
+    /* justify-content: space-around; */
+    gap: 1.5rem;
+    padding: 0 .5rem;
+    
+}
+header>nav{
+    margin: 4px 10%;
+    padding: .5rem;
+
+}
+.rating-container{
+    grid-template-columns: repeat(2, 200px);
+    margin: 4% auto;
+    gap: 5rem;
+    
+}
+
+.episodes-container{
+    max-width: 992px;
+}
+.episodes-content{
+  display:flex;
+  flex-wrap: wrap;
+  flex: 1;
+  margin: 0 auto;
+  justify-content: center;
+
+}
+.choose-tech{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 1rem;
+    margin-bottom: 24rem;
+
+}
+ 
 }
