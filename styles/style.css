@@ -202,7 +202,7 @@ header>nav{
     margin: 3rem auto;
     
 }
-.podcast-container>h1{
+.podcast-container>h2{
     color: var(--white-font);
 }
 .podcast-container>p{
@@ -256,7 +256,7 @@ header>nav{
     text-align: center;
 }
 
-.choos-tech{
+.choose-tech{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 200px);
@@ -315,6 +315,55 @@ header>nav{
 
 } */
 
+/* ...............episodes container........... */
+.episodes-container{
+    max-width: 1100px;
+    /* question.................................................... */
+    margin: 30rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.episodes-container>h1,.episodes-card>h3{
+    color: var(--white-font);
+    background: transparent;
+}
+.episodes-container>h1{
+    margin: 1rem auto;
+}
+.episodes-content{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* height: 27rem; */
+  gap: 1rem;
+
+}
+.episodes-card{
+    background-color: #351165;
+    max-width: 360px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1rem;
+    border-radius: 12px;
+    padding: .3rem;
+
+}
+.episodes-card:hover{  
+    box-shadow: 3px 5px 5px rgb(71, 231, 156);
+}
+.clock{
+    color: #00FF88;
+    display: flex;
+    gap: .7rem;
+    background: transparent;
+}
+.clock img{
+    background: transparent;
+}
+
 /* ///////////////////////responsive breakpiont//////////////////// */
 @media screen and (max-width:576px){
     header>nav{
@@ -340,13 +389,22 @@ header>nav{
     
 }
 /* ........choose tech......... */
-.choos-tech{
+.choose-tech{
     display: block;
     margin: 1.5rem;
 
 }
 .grid-items{
     margin: 1.5rem;   
+}
+/* .................episodes content responsive............... */
+ .episodes-content{
+  display:block;
+  margin: 0 auto;
+
+}
+.episodes-card{  
+ margin: 1rem auto;
 }
 
 }
