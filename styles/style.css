@@ -319,7 +319,7 @@ header>nav{
 .episodes-container{
     max-width: 1100px;
     /* question.................................................... */
-    margin: 30rem auto;
+    margin: 30rem auto 0rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -364,6 +364,41 @@ header>nav{
     background: transparent;
 }
 
+
+/* ...........meet container......... */
+.meet-container{
+    margin: 2rem auto;
+    border: 2px solid white;
+    max-width: 1100px;
+}
+.meet-container>h1{
+    text-align: center;
+    color: var(--white-font);
+}
+.meet-content{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.host-img{
+    width: 50%;
+    height: 50%;
+    
+}
+.host-introduce>h2{
+    color: var(--white-font);
+    margin: 1rem;
+}
+.host-social{
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+    margin: 1rem;
+    cursor: pointer;
+}
+
 /* ///////////////////////responsive breakpiont//////////////////// */
 @media screen and (max-width:576px){
     header>nav{
@@ -405,6 +440,24 @@ header>nav{
 }
 .episodes-card{  
  margin: 1rem auto;
+}
+
+/* .....................meet host................ */
+.meet-content{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+.host-introduce{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
 }
 
 }
