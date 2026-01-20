@@ -37,7 +37,10 @@
     border-radius: 8px;
     box-shadow: 3px 5px 5px rgb(71, 231, 156);
 }
-
+p{
+     color: rgb(155, 145, 145);
+     background: transparent;
+}
 
 
 
@@ -104,6 +107,7 @@ header>nav{
      height: 100vh;
      background-position: center;
      position: relative;
+     filter: drop-shadow(1px 1px 5px rgb(71, 231, 156));
     
 
 }
@@ -137,8 +141,9 @@ header>nav{
     position: absolute;
     top: 25%;
     left: 60%;
-    
+    color: white;
     transform: translate(-50%, -50%);
+    filter: drop-shadow(1px 1px 10px rgb(71, 231, 156));
 }
 .hero-btn{
     display: flex;
@@ -176,7 +181,7 @@ header>nav{
     align-items: center;
     flex-direction: column;
     position: absolute;
-    top: 85%;
+    top: 80%;
     left: 50%;
      transform: translate(-50%, -50%);
      gap: 1rem;
@@ -185,7 +190,7 @@ header>nav{
      margin: 0 auto;
     
 }
-.hero-content >h1 ,p{
+.hero-content >h1{
     color: var(--white-font);
     background: transparent;
 }
@@ -223,6 +228,7 @@ header>nav{
     max-width: 1360px;
     
     margin: 6rem auto;
+
 }
 .rating-container{
     display: grid;
@@ -231,7 +237,6 @@ header>nav{
     justify-content: center;
     gap: 6rem;
     padding-left: 6rem;
-      
 
 }
 
@@ -385,6 +390,8 @@ header>nav{
 .host-img{
     width: 50%;
     height: 50%;
+    filter: drop-shadow(1px 1px 20px rgb(71, 231, 156));
+    background: transparent;
     
 }
 .host-introduce>h2{
@@ -414,7 +421,7 @@ footer{
 }
 .footer-content>h1, .footer-content>p, .footer-content>h5{
     background-color: transparent;
-    color: var(--white-font);
+    color: rgb(155, 145, 145);
     text-align: center;
     cursor: pointer;
 
@@ -427,7 +434,7 @@ footer{
     max-width: 500px;
     background: transparent;
     padding: 1rem;
-    width: 30rem;
+    width: 32rem;
     height: 20rem;
     position: absolute;
     top: 75%;
@@ -436,10 +443,21 @@ footer{
 }
 .footer-social{
     display:grid;
+    justify-content: center;
+    place-items: center;
     grid-template-columns: repeat(4, 1fr);
     gap: 2.5rem;
     background: transparent;
     cursor: pointer;
+}
+.footer-social img{
+    height:24px ;
+    width:24px;
+}
+.footer-social>p{
+    color: rgb(155, 145, 145);
+    display: flex;
+    gap: .5rem;
 }
 /* .logo-footer{
     background: transparent;
@@ -465,15 +483,37 @@ footer{
     display:inline;
 }
 /* \\\\\\\\hero section/////////////// */
+.hero-circle{
+    background-color: transparent;
+    width: 15rem;
+    height: 15rem;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -75%);    
+}
+.microphone{
+    background-color: transparent;
+    height: 7rem;
+    width: 5rem;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+}
 .new{
     top: 25%;
     left: 75%;
 }
+.hero-content{
+    top: 75%;
+}
+/* ...................rating container................. */
+
 .rating-container{
     grid-template-columns: repeat(2, 1fr);
     margin: 6% 8%;
-    gap: .5rem;
-    
+    gap: 1rem;
+    padding: 0rem 1rem 0rem 2.2rem;
+    /* border: 1px solid red; */
     
 }
 /* ........choose tech......... */
